@@ -26,3 +26,40 @@ while len(arr) > 0:
         s += 1
         d += 1
 print(sreeja, dima)
+
+
+# little efficient
+# n = int(input())
+# arr = list(map(int, input().split()))
+
+# # Initialize scores for Sereja and Dima
+# sreeja = 0
+# dima = 0
+
+# # Two pointers for the array
+# left = 0
+# right = n - 1
+
+# # Alternate turns (True for Sereja, False for Dima)
+# turn = True
+
+# while left <= right:
+#     # Determine which card to take (leftmost or rightmost)
+#     if arr[left] > arr[right]:
+#         chosen_card = arr[left]
+#         left += 1
+#     else:
+#         chosen_card = arr[right]
+#         right -= 1
+
+#     # Add the chosen card to the appropriate player's score
+#     if turn:
+#         sreeja += chosen_card
+#     else:
+#         dima += chosen_card
+
+#     # Alternate turn
+#     turn = not turn
+
+# # Print the final scores
+# print(sreeja, dima)
