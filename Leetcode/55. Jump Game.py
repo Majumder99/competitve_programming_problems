@@ -8,6 +8,7 @@ class Solution:
             
             far_distance = max(far_distance, i + nums[i])
             
-            if far_distance > array_length - 1:
+            if far_distance >= array_length - 1:
                 return True
+            
         return False
