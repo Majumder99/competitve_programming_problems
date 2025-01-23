@@ -13,5 +13,8 @@ for _ in range(t):
     elif h == 12:
         print(str(h) + ":" + str(m).zfill(2) + " " + "PM")
     else:
-        print("0" + str(h - 12) + ":" + str(m).zfill(2) + " " + "PM")
+        if h - 12 < 10:
+            print("0" + str(h - 12) + ":" + str(m).zfill(2) + " " + "PM")
+        else:
+            print(str(h - 12) + ":" + str(m).zfill(2) + " " + "PM")
     
