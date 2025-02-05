@@ -18,7 +18,12 @@ def countingSort(arr):
     freq_array = [0] * 100
     for i in arr:
         freq_array[i] += 1
+    
+    # print those sorted numbers
+    for i in range(100):
+        print((str(i) + ' ') * freq_array[i], end='')
     return freq_array
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
