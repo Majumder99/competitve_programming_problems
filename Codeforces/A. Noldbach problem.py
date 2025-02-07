@@ -22,8 +22,9 @@ def sum_of_three(n):
 n, k = map(int, input().split())
 count = 0
 for i in range(2, n+1):
-    if sum_of_three(i):
-        count += 1
+    if i in sieve:
+        if sum_of_three(i):
+            count += 1
         
 if count >= k:
     print("YES")
