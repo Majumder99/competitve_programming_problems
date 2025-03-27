@@ -5,13 +5,19 @@ class Solution:
 
         for i in range(len(s)):
             if s[i] == "#":
-                result_1.pop()
+                if len(result_1) == 0:
+                    continue
+                else:
+                    result_1.pop()
             else:
                 result_1.append(s[i])
 
         for i in range(len(t)):
             if t[i] == "#":
-                result_2.pop()
+                if len(result_2) == 0:
+                    continue
+                else:
+                    result_2.pop()
             else:
                 result_2.append(t[i])
         
