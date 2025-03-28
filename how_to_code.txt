@@ -1,0 +1,4 @@
+first go throught the problem statement
+then if not understand then paste that in gpt to understand more perfectly 
+then write the code. 
+if not then see some solutions.
